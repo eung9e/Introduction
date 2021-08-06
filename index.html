@@ -1,25 +1,67 @@
 <!DOCTYPE html>
   <html>
   <head>
-  <title>자기소개</title>
+  <title>Introduction</title>
   <meta charset="utf-8" />
+  <style>
+  div {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #000;
+  }  
+  div.left {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    background: ivory;
+    color: dimgrey;
+    text-align: center;
+  }
+  div.right {
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+    background: ivory;
+    color: dimgrey;
+    text-align: center;
+  }
+  footer {
+    background-color: LightSalmon;
+    height: 90px;
+    padding: 1px 1px;
+    margin: 0;
+    border: black;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+  }
+  </style>
   </head> 
   <body>
-    <h1><p style="font-size:25px;">자기소개</p></h1>
+    </div>
+    <div class="main content">
+      <div class="left">
+        <h1>자기소개</h1>
         <p>
           이름 : 하민철<br>
           나이 : 25 <br>
           취미 : 기타연주<br> 
           좋아하는 음식 : 초밥<br>
         </p>
-    <h2><p style="font-size:25px;">기억에 남는 초밥</p></h2>
+      </div>
+      <div class="right">
+        <h1>기억에 남는 초밥</h1>
         <p>
-          <img src="sushi.jpeg"width="30%"><br> 
-          장소 : 스시아라타
+          <a href="https://www.instagram.com/tsubasa841/" target="_blank">
+          <img src="sushi.jpeg" width="50%" height="200px"><br> 
+          <a>
+        <br>장소 : 스시아라타 (위의 이미지를 클릭하면 공식 인스타그램으로 연결됩니다.)  
         </p>
+      </div>
+    </div>
     <footer>
       <p>Design by Minchul Ha</p>
-      <address>email: eung9e@gmail.com</address>
+      <address style="text-align: center;">email: eung9e@gmail.com</address>
     </footer>
   </body>
 </html>
