@@ -7,30 +7,27 @@
   div {
     width: 100%;
     height: 500px;
-    border: 1px solid #000;
+    border: 1px solid LightSalmon;
   }  
   div.left {
     width: 50%;
     float: left;
     box-sizing: border-box;
-    background: ivory;
-    color: dimgrey;
     text-align: center;
   }
   div.right {
     width: 50%;
     float: right;
     box-sizing: border-box;
-    background: ivory;
-    color: dimgrey;
     text-align: center;
   }
   footer {
     background-color: LightSalmon;
+    position:absolute;
+    width: 98.9%;
     height: 90px;
     padding: 1px 1px;
-    margin: 0;
-    border: black;
+    margin: 0px;
     box-sizing: border-box;
     color: white;
     text-align: center;
@@ -44,9 +41,21 @@
         <h1>자기소개</h1>
         <p>
           이름 : 하민철<br>
-          나이 : 25 <br>
-          취미 : 기타연주<br> 
-          좋아하는 음식 : 초밥<br>
+          <br>나이 : 25 <br>
+          <br>취미 : 기타연주<br> 
+          <br>좋아하는 음식 : 초밥<br>
+          <br>
+          <input id="night_day" type="button" value="night" onclick="
+            if(document.querySelector('#night_day').value === 'night'){
+              document.querySelector('body').style.backgroundColor='black';
+              document.querySelector('body').style.color='white';
+              document.querySelector('#night_day').value='day';
+            } else {
+              document.querySelector('body').style.backgroundColor='ivory';
+              document.querySelector('body').style.color='black';
+              document.querySelector('#night_day').value='night'
+            }
+            ">
         </p>
       </div>
       <div class="right">
