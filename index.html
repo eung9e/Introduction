@@ -6,7 +6,7 @@
   <style>
   div {
     width: 100%;
-    height: 500px;
+    height: 700px;
     border: 1px solid LightSalmon;
   }  
   div.left {
@@ -23,16 +23,17 @@
   }
   footer {
     background-color: LightSalmon;
-    position:absolute;
-    width: 98.9%;
-    height: 90px;
-    padding: 1px 1px;
-    margin: 0px;
-    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    padding: 1px;
     color: white;
     text-align: center;
   }
+  body {
+    font-family: 'Gowun Dodum', sans-serif;
+  }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
   </head> 
   <body>
     </div>
@@ -46,16 +47,17 @@
           <br>좋아하는 음식 : 초밥<br>
           <br>
           <input id="night_day" type="button" value="night" onclick="
-            if(document.querySelector('#night_day').value === 'night'){
-              document.querySelector('body').style.backgroundColor='black';
-              document.querySelector('body').style.color='white';
-              document.querySelector('#night_day').value='day';
+            var target = document.querySelector('body');
+            if(this.value === 'night'){
+              target.style.backgroundColor = 'black';
+              target.style.color = 'white';
+              this.value = 'day';
             } else {
-              document.querySelector('body').style.backgroundColor='ivory';
-              document.querySelector('body').style.color='black';
-              document.querySelector('#night_day').value='night'
+              target.style.backgroundColor = 'ivory';
+              target.style.color = 'black';
+              this.value = 'night';
             }
-            ">
+          ">
         </p>
       </div>
       <div class="right">
@@ -63,7 +65,7 @@
         <p>
           <a href="https://www.instagram.com/tsubasa841/" target="_blank">
           <img src="sushi.jpeg" width="350px" height="300px"><br> 
-          <a>
+          </a>
         <br>장소 : 스시아라타 (위의 이미지를 클릭하면 공식 인스타그램으로 연결됩니다.)  
         </p>
       </div>
@@ -71,6 +73,7 @@
     <footer>
       <p>Design by Minchul Ha</p>
       <address style="text-align: center;">email: eung9e@gmail.com</address>
+      <br>
     </footer>
   </body>
 </html>
